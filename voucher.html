@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connected Minds Clo.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    z-index: 1000; 
+}
+.logo {
+padding-left: 30px;
+}
+nav {
+    margin-right: 30px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 0 0 5px 5px;
+}
+nav ul li:hover > ul {
+    display: inherit;
+}
+nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 200px;
+}
+nav ul ul li a {
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: normal;
+}
+nav ul li:hover > a {
+    background-color: #333;
+    border-radius: 5px 5px 0 0;
+}
+nav ul ul li:hover > a {
+    background-color: #555;
+    border-radius: 0;
+}
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px 5px 0 0;
+}
+.banner {
+    height: 20vh;
+}
+.bannerImg{
+    width: 100%; 
+    height: 100%; 
+    display: block;
+    object-fit: cover;
+}
+.top{
+  text-decoration: none;
+  margin-left: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+}
+.top:hover {
+    background-color: #292525; 
+}
+table {
+      width: 50%;
+      border-collapse: collapse;
+      margin: 20px auto;
+}
+th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+}
+th {
+      background-color: #f2f2f2;
+    }
+.voucher {
+      font-weight: bold;
+      color: green;
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+            <div class="logo">
+                <img src="tees/blacklogo.jpg" alt="logo" width="200px" height="70px">
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="First-page.html">Home</a></li>
+                    <li><a href="REYESEXER04.html#statement">Collections</a>
+                  <ul class="dropdown">
+                    <li><a href="REYESEXER04.html#statement">Statement</a></li>
+                    <li><a href="REYESEXER04.html#badkids">Bad Kids</a></li>
+                    <li><a href="REYESEXER04.html#hoodiz">Hoodizz</a></li>
+                  </ul>  
+                  </li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="feedback.html">Feedbacks</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                </ul>
+              </nav>
+    </header>
+    <section class="banner">
+        <img class="bannerImg" src="tees/Logo.jpg" alt="banner">
+    </section> <br><br><br><br><br>
+
+    <table>
+        <tr>
+          <th colspan="2"><span style="color: red; font-size: 35px; text-align: center;">Get 20% Discount</span></th>
+        </tr>
+        <tr>
+          <th>Collection Name</th>
+          <th>Voucher</th>
+        </tr>
+        <tr>
+          <td>Cream Tee</td>
+          <td class="voucher">VCH123456789</td>
+        </tr>
+        <tr>
+            <td>BFE Tee</td>
+            <td class="voucher">VCGDRGD4345T</td>
+          </tr>
+          <tr>
+            <td>Bloom Tee</td>
+            <td class="voucher">VGHH456YH555</td>
+          </tr>
+          <tr>
+            <td>NFE Tee</td>
+            <td class="voucher">438390FNGNFJ</td>
+          </tr>
+          <tr>
+            <td>POC Hoodie</td>
+            <td class="voucher">V43G45EGG55G</td>
+          </tr>
+          <tr>
+            <td>TBK Tee</td>
+            <td class="voucher">GDRGD5345535</td>
+          </tr>
+          <tr>
+            <td>DLTCYM Tee</td>
+            <td class="voucher">VFESFS435355</td>
+          </tr>
+      </table>
+
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connected Minds Clo.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    z-index: 1000; 
+}
+.logo {
+padding-left: 30px;
+}
+nav {
+    margin-right: 30px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 0 0 5px 5px;
+}
+nav ul li:hover > ul {
+    display: inherit;
+}
+nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 200px;
+}
+nav ul ul li a {
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: normal;
+}
+nav ul li:hover > a {
+    background-color: #333;
+    border-radius: 5px 5px 0 0;
+}
+nav ul ul li:hover > a {
+    background-color: #555;
+    border-radius: 0;
+}
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px 5px 0 0;
+}
+.banner {
+    height: 50vh;
+}
+.bannerImg{
+    width: 100%; 
+    height: 100%; 
+    display: block;
+    object-fit: cover;
+}
+footer {
+    margin-top: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;}
+.footer {
+    background: #000;
+    height: auto;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+.footer p, .footer a {
+    color: #fff;
+}
+.top{
+  text-decoration: none;
+  margin-left: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+}
+.top:hover {
+    background-color: #292525; 
+}
+.socials {
+    position: fixed;
+    bottom: 100px; 
+    right: 40px; 
+    z-index: 1000; 
+}
+.socials ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+    margin-right: 10px; 
+}
+.socials a {
+    display: block;
+    text-decoration: none;
+    font-size: 24px; 
+    color: #000; 
+}
+@media only screen and (max-width: 767px) {
+    .socials li {
+        margin-right: 5px; 
+    }
+    .socials a {
+        font-size: 18px; 
+    }
+}
+    </style>
+</head>
+<body>
+    <a id="top"></a> 
+    <header>
+            <div class="logo">
+                <img src="tees/blacklogo.jpg" alt="logo" width="200px" height="70px">
+              </div>
+              <nav>
+                <ul>
+                    <li><a href="First-page.html">Home</a></li>
+                    <li><a href="REYESEXER04.html#statement">Collections</a>
+                  <ul class="dropdown">
+                    <li><a href="#statement">Statement</a></li>
+                    <li><a href="#badkids">Bad Kids</a></li>
+                    <li><a href="#hoodiz">Hoodizz</a></li>
+                  </ul>  
+                  </li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="feedback.html">Feedbacks</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                </ul>
+              </nav>
+    </header>
+
+    <section class="banner">
+        <img class="bannerImg" src="tees/tbkpic.png" alt="banner">
+    </section> <br><br>
+
+        <div class="intText">
+            <h5>Explore Your Style Journey with</h5>
+            <h1>cONNeCted MindS CLO</h1>
+            <p>Where Fashion Meets Passion, and Your Style Finds its Unique Expression. Discover Trendsetting Designs and Quality Craftsmanship. Elevate Your Wardrobe - Step into a World of Connected Minds Clo.</p> 
+        </div>
+    <br><br><br><br><br><br><br>
+    <!--Main Content-->
+    <section id="statement" class="statement">
+        <h1>Statement Collection</h1>
+
+        <div class="cover">
+        <div class="box">
+            <img src="tees/bfe2.jpg" alt="">
+            <h2><q>BFE Tee</q></h2>
+            <p><span>&#8369;</span> 550.00 PHP</p><br>
+            <a href="bfe.htm">
+              <center><button>View More</button></center>
+            </a>      
+        </div>
+        <div class="box">
+            <img src="tees/bloom2.jpg" alt="">
+            <h2><q>Bloom Tee</q></h2>
+            <p><span>&#8369;</span> 550.00 PHP</p><br>
+            <a href="bloom.htm">
+                <center><button>View More</button></center>
+            </a> 
+        </div>
+        <div class="box">
+            <img src="tees/cream 2.jpg" alt="">
+            <h2><q>Cream Tee</q></h2>
+            <p><span>&#8369;</span> 550.00 PHP</p> <br>
+            <a href="cream.htm">
+                <center><button>View More</button></center>
+            </a> 
+        </div>
+        <div class="box">
+            <img src="tees/dltcm2.jpg" alt="">
+            <h2><q>DLTCM Tee</q></h2>
+            <p><span>&#8369;</span> 550.00 PHP</p><br>
+            <a href="DLTCM.htm">
+                <center><button>View More</button></center>
+            </a> 
+        </div>
+        <div class="box">
+            <img src="tees/nfe2.jpg" alt="">
+            <h2><q>NFE Tee</q></h2>
+            <p><span>&#8369;</span> 550.00 PHP</p><br>
+            <a href="nfe.htm">
+                <center><button>View More</button></center>
+            </a> 
+        </div>
+    </section><br><br><br>
+
+    <section id="badkids" class="badkids">
+        <h1>The Bad Kids</h1>
+
+        <div class="cover">
+            <div class="box">
+                <img src="tees/tbk1.jpg" alt="">
+                <h2><q>TBK Tee</q></h2>
+                <p><span>&#8369;</span> 650.00 PHP</p><br>
+                <a href="tbk.htm">
+                <center><button>View More</button></center>
+                </a>      
+            </div>
+        </div>
+    </section><br><br><br>
+
+    <section id="hoodiz" class="hoodiz">
+        <h1><center>Hoodie Szn</center></h1>
+
+        <div class="cover">
+            <div class="box">
+                <img src="tees/hoodie1.jpg" alt="">
+                <h2><q>POM Hoodie</q></h2>
+                <p><span>&#8369;</span> 1400.00 PHP</p><br>
+                <a href="hoodie.htm">
+                <center><button>View More</button></center>
+                </a>      
+            </div>
+        </div>
+    </section><br><br><br>
+    
+    <div class="socials">
+        <ul>
+            <li><a href="https://www.facebook.com/connectedmnds" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/connectedmindsclo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/@connectedmindsph?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+    <!--contact for all page-->    
+    <section class="contact">
+        <div class="conContainer">
+            <h2>Contact Us</h2>
+            <div class="contact-wrap">
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                        <form action="mailto:connectedminds333@gmail.com" method="post">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +63 921 524 6403</li>
+                        <li><i class="fas fa-envelope"></i> connectedminds333@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 2538 P. Zamora St, Pasay</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+
+    
+    <a href="#top" class="top">Back to top</a>
+    <br><br><br><br><br><br>
+    <footer>
+        <div class="footer">
+            <p>copyright &copy;2024 ConnectedMindsPh. designed by <span>BricksClo</span></p>
+            <a href="privacy.html"><b><i>Privacy Policy</i></b></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connected Minds Clo.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    z-index: 1000; 
+}
+.logo {
+padding-left: 30px;
+}
+nav {
+    margin-right: 30px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 0 0 5px 5px;
+}
+nav ul li:hover > ul {
+    display: inherit;
+}
+nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 200px;
+}
+nav ul ul li a {
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: normal;
+}
+nav ul li:hover > a {
+    background-color: #333;
+    border-radius: 5px 5px 0 0;
+}
+nav ul ul li:hover > a {
+    background-color: #555;
+    border-radius: 0;
+}
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px 5px 0 0;
+}
+.banner {
+    height: 50vh;
+}
+.bannerImg{
+    width: 100%; 
+    height: 100%; 
+    display: block;
+    object-fit: cover;
+}
+footer {
+    margin-top: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;}
+.footer {
+    background: #000;
+    height: auto;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+.footer p, .footer a {
+    color: #fff;
+}
+.top{
+  text-decoration: none;
+  margin-left: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+}
+.top:hover {
+    background-color: #292525; 
+}
+#slider-img-1 {
+    background-image: url(tees/cream\ 1.jpg);
+}
+#slider-img-2 {
+    background-image: url(tees/cream\ 2.jpg);
+}
+#slider-img-3 {
+    background-image: url(tees/sc.jpg);
+}
+#slider-img-4 {
+    background-image: url(tees/cream3.jpg);
+}
+@keyframes slider {
+    0%, 100% {
+        transform: translateX(0%);
+    }
+
+    25%, 50%, 75% {
+        transform: translateX(-100%);
+    }
+}
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 auto; 
+    margin-bottom: 20px; 
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+    <a id="top"></a> 
+    <header>
+            <div class="logo">
+                <img src="tees/blacklogo.jpg" alt="logo" width="200px" height="70px">
+              </div>
+              <nav>
+                <ul>
+                    <li><a href="First-page.html">Home</a></li>
+                    <li><a href="REYESEXER04.html#statement">Collections</a>
+                  <ul class="dropdown">
+                    <li><a href="REYESEXER04.html#statement">Statement</a></li>
+                    <li><a href="REYESEXER04.html#badkids">Bad Kids</a></li>
+                    <li><a href="REYESEXER04.html#hoodiz">Hoodizz</a></li>
+                  </ul>  
+                  </li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="feedback.html">Feedbacks</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                </ul>
+              </nav>
+    </header>
+    <section class="banner">
+        <img class="bannerImg" src="tees/Logo.jpg" alt="banner">
+    </section> <br><br><br><br><br><br><br>
+
+    <section>
+        <div class="order-header">
+            <h2>Cream Oversized Tee</h2>
+            <p><span>&#8369;</span> 550.00 PHP</p><br>
+        </div>
+        <div class="order-form">
+            <div class="order-form-wrapper">
+                <div class="order-wrap-hold">
+                    <div id="slider-img-1"></div>
+                    <div id="slider-img-2"></div>
+                    <div id="slider-img-3"></div>
+                    <div id="slider-img-4"></div>
+                </div>
+            </div>
+            <div class="order-button">
+                <a href="#slider-img-1" class="buttonOrder"></a>
+                <a href="#slider-img-2" class="buttonOrder"></a>
+                <a href="#slider-img-3" class="buttonOrder"></a>
+                <a href="#slider-img-4" class="buttonOrder"></a>
+            </div>
+        </div><br>
+        <div class="statementDetails">
+            <h4>Description</h4>
+            <p>Elevate your casual wardrobe with the Cream Oversized Tee from Connected Minds 9824. This loose-fitting street style tee features a striking graphic print that captures the essence of blooming at different times, making it perfect for any casual occasion.</p>
+            <ul>
+                <li><b>Material:</b> Made from polyster, this tee is both lightweight and durable.</li>
+                <li><b>Care Instructions:</b> Machine washable for easy maintenance and lasting use.</li>
+                <li><b>Sleeve Length:</b> With half sleeves, this tee provides a comfortable fit all year around - perfect for all seasons!</li>
+                <li><b>Clothing Length:</b> The medium length of this oversized tee offers ample coverage while still maintaining its loose-fitting syle - perfect to pair with your favorite jeans and shorts.</li>
+            </ul>
+        </div><br>
+
+        <div class="sizes">
+            <table>
+                <tr>
+                    <th colspan="3"><span style="font-size: 24px;">Size Chart</th> 
+                </tr>
+                <tr>
+                    <th>Size</th>
+                    <th>Width</th>
+                    <th>Length</th>
+                </tr>
+                <tr>
+                    <td>Small</td>
+                    <td>19</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>20</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>Large</td>
+                    <td>21</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td> X-Large</td>
+                    <td>22</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>XX-Large</td>
+                    <td>23</td>
+                    <td>31</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th colspan="4"><span style="font-size: 24px;">This Year Promotions</th> 
+                </tr>
+                <tr>
+                    <th colspan="2">Month</th>
+                    <th>Start</th>
+                    <th>End</th>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td><span><p>First Year <br>Anniversary</p></span></td>
+                    <td>Feb 1</td>
+                    <td>Feb 5</td>
+                </tr>
+                <tr>
+                    <td>April</td>
+                    <td>Summer <br> Sale</td>
+                    <td>Apr 24 </td>
+                    <td>Apr 30</td>
+                </tr>
+                <tr>
+                    <td>June</td>
+                    <td>One Week <br> Sale</td>
+                    <td> June 8</td>
+                    <td> June 15</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td>Black Friday <br> Sale</td>
+                    <td>Nov 29</td>
+                    <td>Nov 30</td>
+                </tr>
+                <tr>
+                    <td>December</td>
+                    <td>Holiday <br>Sale</td>
+                    <td>Dec 22</td>
+                    <td>Dec 27</td>
+                </tr>
+            </table>
+        </div><br><br>
+
+
+        <div class="order-now">
+            <h2>Order Now!</h2>
+              <div class="order-fillup">
+                <form action="mailto:connectedminds333@gmail.com">
+                    <fieldset>
+                        <legend>Product Option</legend><br>
+                        <h2>Cream Oversized Tee</h2>
+                        <p><span>&#8369;</span> 550.00 PHP</p>
+                        <p><span class="sf">Check email for shipping fee.</span></p><br><br>
+                        <label>
+                            Small:
+                            <input type="checkbox" name="size" value="small">
+                        
+                        </label>
+                        <input type="number" name="quantitySmall" min="0"><br>
+                        <label>
+                            Medium:
+                            <input type="checkbox" name="size" value="medium">
+                            
+                        </label>
+                        <input type="number" name="quantityMedium" min="0"><br>
+                        <label>
+                            Large:
+                            <input type="checkbox" name="size" value="large">
+                            
+                        </label>
+                        <input type="number" name="quantityLarge" min="0"><br>
+                        <label>
+                            X-Large:
+                            <input type="checkbox" name="size" value="x-large">
+                            
+                        </label>
+                        <input type="number" name="quantityXlarge" min="0"><br>
+                        <label>
+                            2X-Large:
+                            <input type="checkbox" name="size" value="xx-large">
+                            
+                        </label>
+                        <input type="number" name="quantity2xlarge" min="0"><br>
+                    </fieldset><br>
+
+                    <fieldset>
+                        <legend>Shipping Information</legend><br>
+                        <label for="name">Full Name:</label>  
+                        <input type="text" name="name" id="name" placeholder="Your Name" required maxlength=40 size="40"> 
+                        <label for="addr">Address:</label> 
+                        <input type="text" id="addr" required placeholder="Your Address" maxlength=40 size="40">
+                        <label for="contact_email">Email:</label>
+                        <input type="email" required id="contact_email" maxlength=40 size="40" placeholder="Enter Valid Email">
+                        <label for="contact_phone">Phone</label>
+                        <input type="text" id="contact_phone" name="contact_method" placeholder="Your Phone Number" required  maxlength=40 size="40">
+                        <label for="voucher">Voucher</label>
+                        <input type="text" id="voucher" name="voucher" placeholder="Optional" maxlength=40 size="40">
+                        <label for="sf-method">Mode of Payment</label>
+                        <label for="cash-on-delivery">Cash on Delivery</label>
+                        <input type="radio" id="cash-on-delivery" name="paymentMethod" value="cash-on-delivery">
+                        <label for="online-payment">Online</label>
+                        <input type="radio" id="online-payment" name="paymentMethod" value="online-payment">
+                        <label for="social">Any Social Media Profile:</label> 
+                        <input type="text" id="social" name="social" maxlength=40 size="40" placeholder="Enter your social media profile">
+                    </fieldset>
+
+                    <input type="submit" value="Submit Order"> &nbsp; &nbsp; <input type="reset" value="Reset">
+                </form>
+            </div>
+        </div>
+    
+
+
+    </section><br>
+
+     
+    <a href="#top" class="top">Back to top</a>
+    <br><br><br><br><br><br>
+    <footer>
+        <div class="footer">
+            <p>copyright &copy;2024 ConnectedMindsPh. designed by <span>BricksClo</span></p>
+            <a href="privacy.html"><b><i>Privacy Policy</i></b></a>
+        </div>
+    </footer>
+</body>
+</html>

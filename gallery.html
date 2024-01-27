@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connected Minds Clo.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    z-index: 1000; 
+}
+.logo {
+padding-left: 30px;
+}
+nav {
+    margin-right: 30px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 0 0 5px 5px;
+}
+nav ul li:hover > ul {
+    display: inherit;
+}
+nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 200px;
+}
+nav ul ul li a {
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: normal;
+}
+nav ul li:hover > a {
+    background-color: #333;
+    border-radius: 5px 5px 0 0;
+}
+nav ul ul li:hover > a {
+    background-color: #555;
+    border-radius: 0;
+}
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px 5px 0 0;
+}
+.banner {
+    height: 40vh;
+}
+.bannerImg{
+    width: 100%; 
+    height: 100%; 
+    display: block;
+    object-fit: cover;
+}
+footer {
+    margin-top: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;}
+.footer {
+    background: #000;
+    height: auto;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+.footer p, .footer a {
+    color: #fff;
+}
+.top{
+  text-decoration: none;
+  margin-left: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+}
+.top:hover {
+    background-color: #292525; 
+}
+/***//***//***//*GALLERY PAGE*//***//***//***/
+.gal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    gap: 12px;
+    margin-top: 10px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    place-content: center; 
+}
+.gal img {
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+@media only screen and (max-width: 767px) {
+.gal {
+  grid-template-columns: 1fr;
+}
+}
+.galtext h2{
+    text-align: center;
+    font-size: 27px;
+}
+.galtext p{
+    text-align: center;
+    font-size: 15px;
+    color: red;
+    text-decoration: line-through;
+}
+    </style>
+</head>
+<body>
+    <a id="top"></a> 
+    <header>
+            <div class="logo">
+                <img src="tees/blacklogo.jpg" alt="logo" width="200px" height="70px">
+              </div>
+              <nav>
+                <ul>
+                    <li><a href="First-page.html">Home</a></li>
+                    <li><a href="REYESEXER04.html#statement">Collections</a>
+                  <ul class="dropdown">
+                    <li><a href="REYESEXER04.html#statement">Statement</a></li>
+                    <li><a href="REYESEXER04.html#badkids">Bad Kids</a></li>
+                    <li><a href="REYESEXER04.html#hoodiz">Hoodizz</a></li>
+                  </ul>  
+                  </li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="feedback.html">Feedbacks</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                </ul>
+              </nav>
+    </header>
+    <section class="banner">
+        <img class="bannerImg" src="tees/desktop.jpg" alt="banner">
+    </section> <br><br><br><br>
+        
+        <div class="galtext">
+            <h2>Discover Style, Embrace Comfort: Unveiling a Collection of Timeless Elegance and Contemporary Trends</h2>
+            <p>be part of the fam! and be featured on our gallery</p>
+        </div><br><br>
+        
+
+        <div class="gal">
+            <a href="gallery/15.jpg" data-lightbox="photos" data-title="Ig Photo 1">
+                <img src="gallery/15.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/1.jpg" data-lightbox="photos" data-title="Ig Photo 2">
+                <img src="gallery/1.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/2.jpg" data-lightbox="photos" data-title="Ig Photo 3">
+                <img src="gallery/2.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/3.jpg" data-lightbox="photos" data-title="Ig Photo 4">
+                <img src="gallery/3.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/4.jpg" data-lightbox="photos" data-title="Ig Photo 5">
+                <img src="gallery/4.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/5.jpg" data-lightbox="photos" data-title="Ig Photo 6">
+                <img src="gallery/15.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/6.jpg" data-lightbox="photos" data-title="Ig Photo 7">
+                <img src="gallery/6.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/7.jpg" data-lightbox="photos" data-title="Ig Photo 8">
+                <img src="gallery/7.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/8.jpg" data-lightbox="photos" data-title="Ig Photo 9">
+                <img src="gallery/8.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/9.jpg" data-lightbox="photos" data-title="Ig Photo 10">
+                <img src="gallery/9.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/10.jpg" data-lightbox="photos" data-title="Ig Photo 11">
+                <img src="gallery/10.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/11.jpg" data-lightbox="photos" data-title="Ig Photo 12">
+                <img src="gallery/11.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/12.jpg" data-lightbox="photos" data-title="Ig Photo 13">
+                <img src="gallery/12.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/13.jpg" data-lightbox="photos" data-title="Ig Photo 14">
+                <img src="gallery/13.jpg" height="300px" width="300px">
+            </a>
+            <a href="gallery/14.jpg" data-lightbox="photos" data-title="Ig Photo 15">
+                <img src="gallery/14.jpg" height="300px" width="300px">
+            </a>
+            <a href="tees/h2.jpg" data-lightbox="photos" data-title="Ig Photo 16">
+                <img src="tees/h2.jpg" height="300px" width="300px">
+            </a>
+            <a href="tees/logologo.jfif" data-lightbox="photos" data-title="Ig Photo 17">
+                <img src="tees/logologo.jfif" height="300px" width="300px">
+            </a>
+            <a href="tees/cover.jpg" data-lightbox="photos" data-title="Ig Photo 18">
+                <img src="tees/cover.jpg" height="300px" width="300px">
+            </a>
+            <a href="tees/abtimg.jpg" data-lightbox="photos" data-title="Ig Photo 19">
+                <img src="tees/abtimg.jpg" height="300px" width="300px">
+            </a>
+            <a href="tees/cream3.jpg" data-lightbox="photos" data-title="Ig Photo 20">
+                <img src="tees/cream3.jpg" height="300px" width="300px">
+            </a>
+            <a href="tees/cream 2.jpg" data-lightbox="photos" data-title="Ig Photo 21">
+                <img src="tees/cream 2.jpg" height="300px" width="300px">
+            </a>
+           
+        </div>
+        
+        
+
+    <section class="contact">
+        <div class="conContainer">
+            <h2>Contact Us</h2>
+            <div class="contact-wrap">
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                        <form action="mailto:connectedminds333@gmail.com" method="post">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +63 921 524 6403</li>
+                        <li><i class="fas fa-envelope"></i> connectedminds333@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 2538 P. Zamora St, Pasay</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <a href="#top" class="top">Back to top</a>
+    <br><br><br><br><br><br>
+    <footer>
+        <div class="footer">
+            <p>copyright &copy;2024 ConnectedMindsPh. designed by <span>BricksClo</span></p>
+            <a href="privacy.html"><b><i>Privacy Policy</i></b></a>
+        </div>
+    </footer>
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>
+

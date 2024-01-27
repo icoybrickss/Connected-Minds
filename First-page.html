@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connected Minds Clo</title>
+    <meta http-equiv="X-UA-Compatible" contents="IE=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar a{
+            font-size: 25px;
+            font-weight: 500;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .navbar-toggler{
+            padding: 1px 5px;
+            font-size: 20px;
+            line-height: 0.3;
+            background: rgb(255, 255, 255);
+        }
+        .w-100-height{
+            height: 90vh;
+            width: 100%;
+        }
+        .carousel-item{
+            min-height: 300px;
+        }
+        .carousel-caption{
+            text-align: left;
+            margin-bottom: 200px;
+            z-index: 2;
+        }
+        .carousel-caption h5{
+            font-size: 60px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+            line-height: 60px;
+            text-align: left;
+        }
+        .carousel-caption p{
+            width: 60%;
+            font-size: 16px;
+            line-height: 1.9;
+            text-align: left;
+        }
+        .carousel-item .carousel-caption input{
+            padding: 0.73rem 1rem;
+        }
+        .carousel-inner::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-black fixed">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">
+            <img src="tees/blacklogo.jpg" alt="logo" class="w-50">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mg-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="REYESEXER04.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="feedback.html">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark btn px-3 bg-white rounded-0" href="#contf">Ask Us</a>
+              </li>
+            </ul>
+             
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleAutoplaying" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="gallery/8.jpg" class="d-block w-100-height" alt="...">
+            <div class="carousel-caption carousel">
+                <p>1 / 3</p>
+                <h5>Find Styles <br>Elevate Fashion </h5>
+                <div class="mt-5 d-flex">
+                    <input type="text" class="form-control search w-50 rounded-0" id="floatingInput" placeholder="Search...">
+
+                    <button class="btn btn-light btn-sm justify-content-md-end mx-2 px-3 rounded-0"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="gallery/6.jpg" class="d-block w-100-height" alt="...">
+            <div class="carousel-caption carousel">
+                <p>2 / 3</p>
+                <h5>Connected Minds <br> Stay Connected <br>We Are One</h5>
+                <p><a href="about.html" class="btn btn-light btn-lg mt-3 rounded-0">Discover More</a></p>
+            </div>
+          </div>
+
+          <div class="carousel-item ">
+            <img src="gallery/2.jpg" class="d-block w-100-height" alt="...">
+            <div class="carousel-caption carousel">
+                <p>3 / 3</p>
+                <h5>Streetwear Clothes <br>Baller Drips</h5>
+                <p><a href="gallery.html" class="btn btn-light btn-lg mt-3 rounded-0">Find Styles</a></p>
+                
+            </div>
+          </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <section class="contact">
+        <div class="conContainer">
+            <h2>Contact Us</h2>
+            <div class="contact-wrap">
+                <div class="contact-form">
+                    <h3>What do you need?</h3>
+                        <form action="mailto:connectedminds333@gmail.com" method="post">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                </div>
+                <div class="contact-info" id="contf">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +63 921 524 6403</li>
+                        <li><i class="fas fa-envelope"></i> connectedminds333@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 2538 P. Zamora St, Pasay</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
